@@ -14,7 +14,7 @@ Softmax_activation = nn.Activation_Softmax()
 
 
 
-with np.load("openclose_model_weights.npz") as data:
+with np.load("ModelParams.npz") as data:
     Layer1.weights, Layer1.biases = data["Layer1_weights"], data["Layer1_biases"]
     Layer2.weights, Layer2.biases = data["Layer2_weights"], data["Layer2_biases"]
     Layer3.weights, Layer3_biases = data["Layer3_weights"], data["Layer3_biases"]
